@@ -18,17 +18,15 @@ public class ejerciciosPracticos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //ejercicio3
-//        Escribir un programa que pida una frase y la muestre toda en mayúsculas y después toda
-//en minúsculas. Nota: investigar la función toUpperCase() y toLowerCase() en Java.
+        //ejercicio4
+//        Dada una cantidad de grados centígrados se debe mostrar su equivalente en grados
+//Fahrenheit. La fórmula correspondiente es: F = 32 + (9 * C / 5).
 
     Scanner read = new Scanner(System.in);
-        System.out.println("Ingrese una frase");
-        String frase = read.nextLine();
-        String min = frase.toLowerCase();
-        String may = frase.toUpperCase();
-        System.out.println("Minuscula: " +min);
-        System.out.println("Mayuscula: " +may);
+        System.out.println("Ingrese una cantidad de grados celsius");
+        int celsius = read.nextInt();
+        int F = 32 + (9 * celsius / 5);
+        System.out.println(celsius + "°, equivalen a " + F + "F°");
     
     }
     
