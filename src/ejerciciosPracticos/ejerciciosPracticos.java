@@ -16,7 +16,18 @@ public class ejerciciosPracticos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("prueba");
+        //ejercicio15
+        //Realizar un algoritmo que rellene un vector con los 100 primeros números enteros y los
+//muestre por pantalla en orden descendente.
+        int vector [] = new int[100];
+        for (int i = 0; i < 100; i++) {
+            vector[i] = i;
+        }
+        writeVector(vector);
     }
-    
+    public static void writeVector(int vector []){
+        for (int i : vector) {
+            System.out.print(vector[i] + " - ");
+        }
+    }
 }
